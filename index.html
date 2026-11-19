@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>🎁 มีของขวัญพิเศษสำหรับคุณ...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,700;0,900;1,900&family=Mali:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fullscreen Canvas for Explosion & Confetti -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Initial Minimalist Screen: Just the Gift Box -->
+  <div id="giftScreen" class="gift-container">
+    <div class="gift-wrapper" id="giftBox" role="button" tabindex="0" title="แตะเพื่อเปิดของขวัญ!">
+      <!-- 3D Gift Box -->
+      <div class="gift-lid" id="giftLid">
+        <div class="ribbon-bow">
+          <div class="bow-left"></div>
+          <div class="bow-right"></div>
+          <div class="bow-center"></div>
+        </div>
+        <div class="lid-ribbon"></div>
+      </div>
+      <div class="gift-body">
+        <div class="body-ribbon-v"></div>
+        <div class="body-ribbon-h"></div>
+      </div>
+    </div>
+    <div class="gift-caption" id="giftCaption">
+      <p class="pulse-text">มีของขวัญวันเกิดมาส่ง... 🎁</p>
+      <span class="tap-hint">(แตะหรือคลิกที่กล่องเพื่อเปิด)</span>
+    </div>
+  </div>
+
+  <!-- Comic "BOOM" Explosion Overlay -->
+  <div id="boomSplash" class="boom-splash">💥 BOOM! 💥</div>
+
+  <!-- Birthday Chaos Container (Hidden until opened) -->
+  <div id="chaosContainer" class="chaos-container hidden">
+    <!-- Floating Marquee / Bouncing HBD Banner -->
+    <div class="hbd-marquee">
+      <span class="marquee-text" id="marqueeText">🎉 HAPPY BIRTHDAY! สุขสันต์วันเกิดนะฮ๊าฟฟู้ววววววววว! 🎂🥳</span>
+    </div>
+
+    <!-- Center Mega Greeting -->
+    <div class="center-banner" id="centerBanner">
+      <h1 class="flash-rainbow" id="hbdMainTitle">🎂 HAPPY BIRTHDAY! 🎂</h1>
+      <h2 class="sub-joke" id="hbdSubTitle">แก่ขึ้นอีกปีแล้วนะสุดหล่อออออ 🤪🎉</h2>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
